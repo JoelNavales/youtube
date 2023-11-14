@@ -1,9 +1,11 @@
 *{
+    font-family: 'poppins', sans-serif; 
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
 }
-
+body{
+    padding: 100px;
+}
 a{
     text-decoration: none;
     color: #5a5a5a;
@@ -23,9 +25,10 @@ nav{
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     background: #fff;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    right: 0;
 }
 
 .flex-div{
@@ -39,9 +42,10 @@ nav{
 }
 
 .nav-right .user-icon{
-    width: 35px;
-    border-radius: 50px;
-    margin-right: 0;
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 
 .nav-left .menu-icon{
@@ -74,13 +78,41 @@ nav{
 .nav-middle .search-box img{
     width: 15px;
 }
+/* SIDEBAR */
+.sidebar{
+    background: white;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+.shortcut-links a img{
+    width: 20px;
+    margin-right: 20px;
+}
 
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
 /* BUTTON */
 .btn-div{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    position: static;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 15px;
 }
 .btn1{
     background-color: black;
@@ -115,6 +147,8 @@ nav{
     grid-column-gap:16px;
     grid-row-gap: 30px;
     margin-top: 15px;
+    margin-left: 250px;
+    margin-right: 40px;
 }
 
 .vid-list .thumbnail{
